@@ -1,0 +1,22 @@
+spring: 
+  profiles:
+    active:
+    - dev
+    
+---
+spring: 
+  profiles: dev
+  application:
+    name: dev-config-client
+  config:
+    info: "config for dev"
+    
+---
+spring: 
+  profiles: test
+  application:
+    name: test-config-client
+  config:
+    info: "config for test"
+
+ 
